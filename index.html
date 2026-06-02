@@ -3,107 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的小站</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      background-color: #f7f7f7;
-      color: #222;
-    }
-
-    nav {
-      background-color: #222;
-      padding: 16px 40px;
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 24px;
-    }
-
-    .hero {
-      background-color: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 16px;
-    }
-
-    p {
-      line-height: 1.8;
-      font-size: 18px;
-    }
-
-    .section {
-      margin-top: 32px;
-      background-color: white;
-      padding: 28px;
-      border-radius: 16px;
-    }
-
-    .section h2 {
-      margin-top: 0;
-    }
-  </style>
+  <title>Creative Lab | 首页</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-
 <body>
-  <nav>
-    <a href="#home">首页</a>
-    <a href="#notes">文章</a>
-    <a href="#projects">作品</a>
-    <a href="#lab">AI实验室</a>
-    <a href="#about">关于</a>
-  </nav>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="主导航">
+      <a class="brand" href="index.html">Creative Lab</a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="pages/notes.html">文章</a>
+        <a href="pages/projects.html">作品</a>
+        <a href="pages/lab.html">AI实验室</a>
+        <a href="pages/about.html">关于</a>
+      </div>
+    </nav>
+  </header>
 
-  <main class="container">
-    <section class="hero" id="home">
-      <h1>欢迎来到我的小站</h1>
-      <p>
-        这是一个用于记录学习、项目和创意实验的个人网站。
-        之后这里会放一些公开的学习笔记、项目记录和有趣的网页小功能。
-      </p>
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Creative Space</p>
+          <h1>记录学习、项目与创意实验</h1>
+          <p class="hero-text">这里会整理一些公开的学习笔记、项目记录、网页练习和 AI 创意作品。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="pages/projects.html">查看作品</a>
+            <a class="button button-secondary" href="pages/lab.html">进入 AI 实验室</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="visual-line"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="notes">
-      <h2>文章</h2>
-      <p>这里以后可以放课程笔记、学习记录和一些想法整理。</p>
+    <section class="section-block">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>内容概览</h2>
+        </div>
+        <div class="card-grid three-columns">
+          <article class="info-card">
+            <h3>文章笔记</h3>
+            <p>整理学习过程中的知识点、问题和想法。</p>
+          </article>
+          <article class="info-card">
+            <h3>项目作品</h3>
+            <p>展示公开项目、课程设计和网页练习。</p>
+          </article>
+          <article class="info-card">
+            <h3>AI实验室</h3>
+            <p>尝试一些有趣的 AI 创意小功能。</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2>作品</h2>
-      <p>这里以后可以放公开项目、课程设计展示和网页作品。</p>
+    <section class="section-block muted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>精选项目</h2>
+        </div>
+        <div class="card-grid three-columns">
+          <article class="project-card">
+            <h3>课程笔记整理</h3>
+            <p>把课程学习中的关键知识点整理成清晰、可复习的公开笔记。</p>
+            <div class="tag-list">
+              <span>Learning</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>个人主页搭建</h3>
+            <p>使用原生网页技术搭建一个简洁、可持续维护的个人网站。</p>
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>GitHub Pages</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>随机灵感卡片生成器</h3>
+            <p>用简单 JavaScript 随机展示一句适合创作和学习的灵感提示。</p>
+            <div class="tag-list">
+              <span>JavaScript</span>
+              <span>AI Ideas</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="lab">
-      <h2>AI实验室</h2>
-      <p>这里以后可以放一些AI生成内容、小工具和创意互动网页。</p>
+    <section class="section-block">
+      <div class="container split-section">
+        <div class="section-heading align-left">
+          <p class="eyebrow">AI Lab Preview</p>
+          <h2>随机灵感卡片</h2>
+          <p>点击按钮，生成一句适合学习、写作或项目构思的轻量提示。</p>
+        </div>
+        <div class="inspiration-box">
+          <p class="inspiration-text" data-inspiration-output>保持好奇，把一个小问题拆成今天可以完成的一步。</p>
+          <button class="button button-primary" type="button" data-inspiration-button>换一句灵感</button>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="about">
-      <h2>关于</h2>
-      <p>这里可以写非常简短的介绍，但不要放真实姓名、学号、手机号、私人邮箱等隐私信息。</p>
+    <section class="section-block muted-section">
+      <div class="container narrow-container">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>关于这个小站</h2>
+        </div>
+        <p class="lead-text">这是一个用于记录个人学习、项目实践和创意实验的小站。内容会以公开、轻量、可持续更新为原则。</p>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Creative Lab</p>
+      <p>Built with HTML, CSS, JavaScript and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
