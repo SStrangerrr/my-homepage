@@ -33,8 +33,12 @@
     font-size: 50px;
   }
 
-  .home-notice-section {
+  .home-announcements {
     padding-bottom: 72px;
+  }
+
+  .announcement-stream {
+    margin-top: -18px;
   }
 
   h1 {
@@ -63,7 +67,17 @@
     grid-template-columns: 1fr;
   }
 
-  .quest-link-card {
+  .announcement-tile {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .announcement-action {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+  .creative-card {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -124,9 +138,25 @@
   .content-card,
   .content-panel,
   .inspiration-box,
-  .notice-card,
-  .quest-link-card {
+  .announcement-tile,
+  .creative-card {
     padding: 22px;
+  }
+
+  .announcement-tile {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .announcement-action,
+  .creative-card-action {
+    grid-column: auto;
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .announcement-number {
+    display: none;
   }
 
   .about-note p {
