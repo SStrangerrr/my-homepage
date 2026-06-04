@@ -16,11 +16,11 @@ JavaScript 负责网页交互，例如本项目里的“随机灵感卡片”按
 
 ## 当前项目如何扩展
 
-文章页可以在 `pages/notes.html` 中继续新增文章卡片。每张卡片可以使用现有的 `content-card` 结构。
+写下来的页面可以在 `pages/notes.html` 中继续新增内容卡片。每张卡片可以使用现有的 `content-card` 结构。
 
-作品页可以在 `pages/projects.html` 中继续新增项目卡片。每张卡片可以使用现有的 `project-card` 结构，并添加项目标签。
+正在生长页面可以在 `pages/projects.html` 中继续新增项目、想法或占坑卡片。每张卡片可以使用现有的 `project-card` 结构。
 
-AI实验室可以在 `pages/lab.html` 中继续新增实验区域。如果实验需要按钮、输入框或结果展示，可以把样式写在 `assets/css/style.css`，把交互写在 `assets/js/main.js`。
+实验室可以在 `pages/lab.html` 中继续新增创意小网页入口。如果实验需要按钮、输入框或结果展示，可以把样式写在 `assets/css/style.css`，把交互写在 `assets/js/main.js`。
 
 ## 为什么不能把 API Key 写在前端
 

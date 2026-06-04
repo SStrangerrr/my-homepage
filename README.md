@@ -1,6 +1,6 @@
-# Creative Lab
+# 奇怪的一角
 
-这是一个使用原生 HTML、CSS、JavaScript 制作的个人网站首页项目，用于记录公开学习笔记、项目作品、网页练习和创意实验。
+这是一个使用原生 HTML、CSS、JavaScript 制作的个人小站，用于放一些正在生长的东西、写下来的想法和创意小网页。
 
 项目不依赖 React、Vue、Next.js、Astro、Vite 或 npm，适合直接部署到 GitHub Pages。
 
@@ -29,7 +29,7 @@ README.md
 
 `index.html` 是首页。
 
-`pages/` 存放子页面，包括文章、作品、AI实验室和关于页面。
+`pages/` 存放子页面，包括正在生长、写下来的、实验室和关于我页面。
 
 `assets/css/` 存放样式文件。
 
@@ -61,13 +61,13 @@ http://localhost:8000
 
 例如主标题、副标题、按钮文字、卡片内容、关于介绍和页脚文字，都可以直接在 `index.html` 里找到对应内容。
 
-## 如何新增文章和项目卡片
+## 如何新增内容卡片
 
-新增文章卡片时，打开 `pages/notes.html`，复制一个 `content-card` 区块，再修改标题和简介。
+新增写下来的内容时，打开 `pages/notes.html`，可以复制一个 `content-card` 区块，再修改标题和简介。
 
-新增项目卡片时，打开 `pages/projects.html`，复制一个 `project-card` 区块，再修改项目标题、简介和标签。
+新增正在生长的内容时，打开 `pages/projects.html`，复制一个 `project-card` 区块，再修改标题和简介。
 
-首页精选项目在 `index.html` 的“精选项目”区域中修改。
+首页公告栏在 `index.html` 的“公告栏”区域中修改。
 
 ## 如何修改颜色和样式
 
