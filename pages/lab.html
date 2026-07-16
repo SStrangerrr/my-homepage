@@ -3,66 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>奇怪的一角 | 实验室</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260604-tiles">
-  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260604-tiles">
+  <meta name="description" content="奇怪的一角的网页实验与随机灵感。">
+  <title>实验 | 奇怪的一角</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260715-board">
+  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260715-board2">
+  <script src="../assets/js/main.js?v=20260715-board" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="brand" href="../index.html">奇怪的一角</a>
-      <div class="nav-links">
-        <a href="../index.html">首页</a>
-        <a href="projects.html">正在生长</a>
-        <a href="notes.html">写下来的</a>
-        <a href="lab.html" aria-current="page">实验室</a>
-        <a href="about.html">关于我</a>
-      </div>
-    </nav>
-  </header>
+  <site-header root="../" active="lab"></site-header>
 
   <main class="page-main">
     <section class="page-hero">
-      <div class="container narrow-container">
+      <div class="page-width">
+        <p class="kicker">Small experiments</p>
         <h1>实验室</h1>
-        <p class="lead-text">这里放一些创意小网页，可能有点奇怪，也可能有点有用。</p>
+        <p class="lead-text">小工具和小游戏的试验场。它们不一定严肃，但都应该真的能用。</p>
       </div>
     </section>
 
     <section class="section-block compact-section">
-      <div class="container">
-        <article class="creative-card theme-side-quest">
-          <div>
-            <p class="announcement-meta">新入口</p>
-            <h2>人生支线任务</h2>
-            <p>主线太累的时候，可以去抽一条小小的支线。它像一个日常小游戏，负责把普通日子轻轻拨动一下。</p>
-          </div>
-          <a class="creative-card-action" href="https://life-side-quest.netlify.app/" target="_blank" rel="noopener noreferrer">打开支线任务</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <div class="container split-section lab-layout">
-        <div class="section-heading align-left">
-          <h2>随机灵感卡片</h2>
-          <p>不知道写什么的时候，就随手换一句。它不一定有用，但可能刚好接住一点想法。</p>
+      <div class="page-width">
+        <div class="section-heading">
+          <h2>可以打开的实验</h2>
+          <p class="section-count">2 个</p>
         </div>
-        <div class="inspiration-box large-box">
-          <p class="inspiration-text" data-inspiration-output>先做一个能运行的小东西，再慢慢把它变得顺眼。</p>
-          <button class="button button-primary" type="button" data-inspiration-button>换一句</button>
+
+        <div class="lab-announcement-grid" aria-label="可以打开的实验">
+          <a class="announcement-tile lab-announcement-tile theme-identity-v" href="https://identity-v-draw-simulator-cn.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <span class="announcement-number">02</span>
+            <span class="announcement-body">
+              <span class="announcement-meta"><span class="event-live-dot" aria-hidden="true"></span>NEW · 庄园新实验</span>
+              <strong>奇怪的珍宝爽抽器</strong>
+              <span class="announcement-description">选择卡池、连续抽取，再得到一份属于今天的庄园运势。</span>
+            </span>
+            <span class="announcement-action">进入庄园开抽</span>
+            <span class="event-stamp" aria-hidden="true">IDENTITY V<br>DRAW EVENT</span>
+          </a>
+
+          <a class="announcement-tile lab-announcement-tile theme-side-quest" href="https://life-side-quest.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <span class="announcement-number">01</span>
+            <span class="announcement-body">
+              <span class="announcement-meta">轻量小游戏</span>
+              <strong>人生支线任务</strong>
+              <span class="announcement-description">抽一条日常支线，给今天换一个轻微而意外的走向。</span>
+            </span>
+            <span class="announcement-action">去抽一条支线</span>
+          </a>
+        </div>
+
+        <div class="lab-grid">
+          <div class="lab-intro">
+            <p class="kicker">Quick prompt</p>
+            <h2>随机灵感</h2>
+            <p>不提供答案，只帮想法轻轻动一下。</p>
+          </div>
+          <div class="inspiration-box">
+            <p class="inspiration-text" aria-live="polite" data-inspiration-output>先让它真实可用，再让它恰到好看。</p>
+            <button class="button button-primary" type="button" data-inspiration-button>换一句</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 奇怪的一角</p>
-      <p>用 HTML、CSS 和 JavaScript 慢慢搭起来。</p>
-    </div>
-  </footer>
-
-  <script src="../assets/js/main.js?v=20260604-tiles"></script>
+  <site-footer></site-footer>
 </body>
 </html>

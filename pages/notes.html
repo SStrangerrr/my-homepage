@@ -3,46 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>奇怪的一角 | 写下来的</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260604-tiles">
-  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260604-tiles">
+  <meta name="description" content="奇怪的一角留下的简短文字。">
+  <title>文字 | 奇怪的一角</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260715-board">
+  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260715-board2">
+  <script src="../assets/js/main.js?v=20260715-board" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="brand" href="../index.html">奇怪的一角</a>
-      <div class="nav-links">
-        <a href="../index.html">首页</a>
-        <a href="projects.html">正在生长</a>
-        <a href="notes.html" aria-current="page">写下来的</a>
-        <a href="lab.html">实验室</a>
-        <a href="about.html">关于我</a>
-      </div>
-    </nav>
-  </header>
+  <site-header root="../" active="notes"></site-header>
 
   <main class="page-main">
     <section class="page-hero">
-      <div class="container narrow-container">
+      <div class="page-width">
+        <p class="kicker">Notes</p>
         <h1>写下来的</h1>
-        <p class="lead-text">这里以后会放一些学习记录、生活切片，还有突然冒出来的奇怪想法。</p>
+        <p class="lead-text">这里不追求更新频率。只有当一段话值得被重新读到，它才会被留下。</p>
       </div>
     </section>
 
     <section class="section-block compact-section">
-      <div class="container narrow-container">
-        <article class="content-panel quiet-panel">
-          <p>现在先空着一点。等有东西想留下来的时候，再慢慢放进来。</p>
+      <div class="page-width">
+        <article class="content-panel empty-state">
+          <p class="kicker">暂时留白</p>
+          <h2>还没有需要公开的文字。</h2>
+          <p>先把空白保留下来，比为了填满页面而制造内容更诚实。</p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 奇怪的一角</p>
-      <p>用 HTML、CSS 和 JavaScript 慢慢搭起来。</p>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </body>
 </html>

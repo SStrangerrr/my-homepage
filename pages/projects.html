@@ -3,53 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>奇怪的一角 | 正在生长</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260604-tiles">
-  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260604-tiles">
+  <meta name="description" content="奇怪的一角正在生长的网页作品。">
+  <title>作品 | 奇怪的一角</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260715-board">
+  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260715-board2">
+  <script src="../assets/js/main.js?v=20260715-board" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="brand" href="../index.html">奇怪的一角</a>
-      <div class="nav-links">
-        <a href="../index.html">首页</a>
-        <a href="projects.html" aria-current="page">正在生长</a>
-        <a href="notes.html">写下来的</a>
-        <a href="lab.html">实验室</a>
-        <a href="about.html">关于我</a>
-      </div>
-    </nav>
-  </header>
+  <site-header root="../" active="projects"></site-header>
 
   <main class="page-main">
     <section class="page-hero">
-      <div class="container narrow-container">
+      <div class="page-width">
+        <p class="kicker">Works in progress</p>
         <h1>正在生长</h1>
-        <p class="lead-text">这里放一些还没完全做好的东西。有些是项目，有些是想法，有些只是先占个坑。</p>
+        <p class="lead-text">不按完成度陈列，只记录那些已经能被使用、也仍有继续空间的作品。</p>
       </div>
     </section>
 
     <section class="section-block compact-section">
-      <div class="container">
-        <div class="card-grid two-columns">
-          <article class="project-card">
-            <h2>奇怪的网站</h2>
-            <p>正在把这里慢慢搭起来。</p>
-          </article>
-          <article class="project-card">
-            <h2>一些小想法</h2>
-            <p>还没想好，但感觉会有用。</p>
-          </article>
-        </div>
+      <div class="page-width stack">
+        <article class="project-panel">
+          <div>
+            <p class="work-meta"><span class="status-dot" aria-hidden="true"></span>可在线使用</p>
+            <h2>奇怪的珍宝爽抽器</h2>
+            <p>围绕卡池选择、抽取反馈与运势评价做的一次完整网页实验。</p>
+            <div class="tag-list" aria-label="项目特点">
+              <span>抽卡模拟</span>
+              <span>数据驱动</span>
+              <span>响应式网页</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://identity-v-draw-simulator-cn.netlify.app/" target="_blank" rel="noopener noreferrer">打开项目</a>
+        </article>
+
+        <article class="project-panel">
+          <div>
+            <p class="work-meta"><span class="status-dot" aria-hidden="true"></span>可在线使用</p>
+            <h2>人生支线任务</h2>
+            <p>用随机选择给普通日子一点轻微扰动，让“做点什么”变得更容易。</p>
+            <div class="tag-list" aria-label="项目特点">
+              <span>轻量游戏</span>
+              <span>随机任务</span>
+              <span>移动端友好</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://life-side-quest.netlify.app/" target="_blank" rel="noopener noreferrer">打开项目</a>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 奇怪的一角</p>
-      <p>用 HTML、CSS 和 JavaScript 慢慢搭起来。</p>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </body>
 </html>

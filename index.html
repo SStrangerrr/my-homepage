@@ -3,53 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>奇怪的一角 | 首页</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=20260604-tiles">
-  <link rel="stylesheet" href="assets/css/responsive.css?v=20260604-tiles">
+  <meta name="description" content="奇怪的一角：收集小工具、网页实验和仍在生长的想法。">
+  <title>奇怪的一角</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=20260715-board">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=20260715-board2">
+  <script src="assets/js/main.js?v=20260715-board" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="brand" href="index.html">奇怪的一角</a>
-      <div class="nav-links">
-        <a href="index.html" aria-current="page">首页</a>
-        <a href="pages/projects.html">正在生长</a>
-        <a href="pages/notes.html">写下来的</a>
-        <a href="pages/lab.html">实验室</a>
-        <a href="pages/about.html">关于我</a>
-      </div>
-    </nav>
-  </header>
+  <site-header active="home"></site-header>
 
-  <main>
+  <main class="page-main">
     <section class="home-hero">
-      <div class="container home-hero-inner">
-        <h1>奇怪的一角</h1>
+      <div class="page-width">
+        <p class="kicker">个人网页 · 持续更新</p>
+        <h1>把想法做成可以打开的东西。</h1>
+        <p class="hero-copy">这里收集小工具、网页实验，以及还在生长中的片段。没有完整履历，也没有多余介绍。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="pages/lab.html">看看实验</a>
+          <a class="button button-secondary" href="pages/about.html">了解这个角落</a>
+        </div>
       </div>
     </section>
 
-    <section class="home-announcements">
-      <div class="container">
-        <div class="announcement-stream" aria-label="最近的小实验">
+    <section class="home-section" aria-labelledby="latest-work">
+      <div class="page-width">
+        <div class="section-heading">
+          <h2 id="latest-work">最近制作</h2>
+          <p class="section-count">项目公告栏</p>
+        </div>
+
+        <div class="announcement-board" aria-label="最近制作的项目公告">
+          <a class="announcement-tile theme-identity-v" href="https://identity-v-draw-simulator-cn.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <span class="announcement-number">02</span>
+            <span class="announcement-body">
+              <span class="announcement-meta"><span class="event-live-dot" aria-hidden="true"></span>NEW · 庄园新实验</span>
+              <strong>奇怪的珍宝爽抽器</strong>
+              <span class="announcement-description">赛季精华、联动精华和全赛季典藏，一次把运气抽个痛快。</span>
+            </span>
+            <span class="announcement-action">进入庄园开抽</span>
+            <span class="event-stamp" aria-hidden="true">IDENTITY V<br>DRAW EVENT</span>
+          </a>
+
           <a class="announcement-tile theme-side-quest" href="https://life-side-quest.netlify.app/" target="_blank" rel="noopener noreferrer">
             <span class="announcement-number">01</span>
             <span class="announcement-body">
               <span class="announcement-meta">新上线</span>
               <strong>人生支线任务</strong>
-              <span>主线太累的时候，可以去抽一条小小的支线。</span>
+              <span class="announcement-description">主线太累的时候，可以去抽一条小小的支线。</span>
             </span>
             <span class="announcement-action">去抽一条支线</span>
           </a>
         </div>
       </div>
     </section>
+
+    <section class="home-section">
+      <div class="page-width quiet-note">
+        <h2>少一点解释，多一点作品。</h2>
+        <p>这个站点保持简单：作品能打开，文字值得留下，个人信息则停在页面之外。</p>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 奇怪的一角</p>
-      <p>用 HTML、CSS 和 JavaScript 慢慢搭起来。</p>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </body>
 </html>

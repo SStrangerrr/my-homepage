@@ -3,45 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>奇怪的一角 | 关于我</title>
-  <link rel="stylesheet" href="../assets/css/style.css?v=20260604-tiles">
-  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260604-tiles">
+  <meta name="description" content="关于奇怪的一角，以及它的隐私边界。">
+  <title>关于 | 奇怪的一角</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260715-board">
+  <link rel="stylesheet" href="../assets/css/responsive.css?v=20260715-board2">
+  <script src="../assets/js/main.js?v=20260715-board" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container" aria-label="主导航">
-      <a class="brand" href="../index.html">奇怪的一角</a>
-      <div class="nav-links">
-        <a href="../index.html">首页</a>
-        <a href="projects.html">正在生长</a>
-        <a href="notes.html">写下来的</a>
-        <a href="lab.html">实验室</a>
-        <a href="about.html" aria-current="page">关于我</a>
-      </div>
-    </nav>
-  </header>
+  <site-header root="../" active="about"></site-header>
 
   <main class="page-main">
     <section class="page-hero">
-      <div class="container narrow-container">
-        <h1>关于我</h1>
+      <div class="page-width">
+        <p class="kicker">About this corner</p>
+        <h1>关于这个角落</h1>
+        <p class="lead-text">它属于一个喜欢把想法做成网页的人。到这里，这样的介绍已经足够。</p>
       </div>
     </section>
 
     <section class="section-block compact-section">
-      <div class="container narrow-container">
-        <article class="content-panel about-note">
-          <p>我是奇怪。<br>机械工程专业本科生。<br>正在摆烂和努力中挣扎，<br>这里是我在互联网上留下的一小角。</p>
+      <div class="page-width about-grid">
+        <article class="content-panel about-statement">
+          <p>不陈列履历，不解释现实身份。这个站点只负责保存作品、实验和少量值得留下的想法。</p>
+          <p>内容会慢慢变化，边界不会。</p>
         </article>
+
+        <aside class="privacy-panel" aria-labelledby="privacy-title">
+          <h2 id="privacy-title">隐私边界</h2>
+          <p>克制不仅是视觉选择，也是内容原则。</p>
+          <ul class="privacy-list">
+            <li>不公开真实姓名与联系方式</li>
+            <li>不展示学校、住址或日常轨迹</li>
+            <li>不放置访问统计与追踪脚本</li>
+          </ul>
+        </aside>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 奇怪的一角</p>
-      <p>用 HTML、CSS 和 JavaScript 慢慢搭起来。</p>
-    </div>
-  </footer>
+  <site-footer></site-footer>
 </body>
 </html>

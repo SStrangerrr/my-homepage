@@ -2,3 +2,16 @@
 node_modules/
 .env
 .env.local
+.env.*
+!.env.example
+
+# 本地设计检查与预览产物，不进入部署仓库。
+work/
+design-qa.md
+design-qa-*.png
+
+# 私钥与证书文件永不提交。
+*.key
+*.pem
+*.p12
+*.pfx
